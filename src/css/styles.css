@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter:700|Noto+Sans+TC&display=swap');
+body{
+	font-size: 18px;
+	background: #fff;  /* fallback for old browsers */
+}
+a { 
+	color: initial; 
+	text-decoration: none;
+} 
+a:hover{
+	text-decoration: none;
+	color: initial;
+}
+.main-container{
+	margin: 0px 8% 0px 8%;
+	text-align: center;
+}
+.nav-top-container{
+	width: 100%;
+	padding: 10px;
+	color: #1C4D83;
+	text-align: left; 
+	text-transform: uppercase;
+	display: inline-block;
+}
+.nav-top-container img{
+	width: 50px;
+	padding: 2px;
+	float: left;
+}
+.leftpart{
+	padding-top: 10px;
+  margin-left: 3px;
+	width: 66%;
+	float: left;
+}
+.rightpart{
+	padding-top: 10px;
+	text-align: right;
+	width: 33%;
+  float: right;
+}
+
+.nav-bot-container{
+	background-image: url(../img/home2.png);
+	padding: 2% 7% 2% 7%;
+	color: #444;
+	background-size:100% 100%;
+	font-family: 'bitter';
+}
+.nav-bot-container h3{
+	color: #C3D500;
+}
+.nav-bot-container img{
+	float: left;
+	width: 40px;
+}
+.nav-bot-container h5{
+	/*line-height: inherit;*/
+	/*margin-left: 50px;*/
+	font-family: arial;
+}
+
+.navbar-container{
+	float: none;
+	display: block;
+}
+.navbar{
+	transition: .5s;
+	background-color: #444;
+	padding-left: 2%;
+}
+
+.navbar-brand{
+	display: none;
+}
+.navbar-items{
+	float: right;
+	color: #fff;
+}
+.nav-item{
+	font-family: 'Microsoft YaHei', sans-serif;
+	font-size: 1.3rem;
+	transition: .3s;
+	margin-left: 3px;
+	margin-right: 3px;
+	border: 1.5px solid transparent;
+}
+.nav-item:hover{
+	transition: .3s;
+	border: 1.5px solid #FFF;
+}
+
+.index-container{
+	background-color: #f3f3f3;
+	padding: 3% 5% 5% 5%;
+}
+
+.three-icons{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.one-icon{
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+.backgroundcircle{
+	background-color: #2196f3;
+	border-radius: 100px;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+.backgroundcircle img{
+	width: 150px;
+}
+.words p{
+	margin: 0;
+	padding: 10px 0px 0px 0px;
+	font-weight: 700;
+}
+.big-container{
+	text-align: justify;
+	margin-bottom: 50px;
+}
+.container{
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.container p{
+	text-align: justify;
+}
+.news li{
+	text-align: left;
+}
+.img-rounded{
+	width: 100%;
+}
+.footer-container{
+	padding: 3% 3% 3% 3%;
+	align-items: center;
+	text-align: left;
+}
+.footer{
+	font-size: 0.9rem;
+}
+.back-to-top{
+	text-align: center;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	opacity: 0;
+	border-radius: 100px;
+	transition: .3s;
+}
+.back-to-top:hover{
+	opacity: 1;
+	transition: .3s; 
+}
+.back-to-top img{
+	width: 50px;
+}
+.advisor-container{
+	display: flex;
+	justify-content: center;
+	color: #555;
+	margin: 100px 0px 100px 0px
+}
+
+.prof-name p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2rem;
+	font-weight: 600;
+}
+.prof-name ul{
+	font-size: 1.2rem;
+	list-style-type: none;
+}
+.bio-container{
+	display: flex;
+	justify-content: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: justify;
+}
+.small-container{
+	margin-bottom: 30px;
+}
+
+.txtjustify{
+	text-align: justify;
+}
+
+.buttons{
+	display: flex;
+	justify-content: space-around;
+}
+
+.tst{
+	display: flex;
+	justify-content: center;
+}
+
+.yahei{
+	font-family: 'Microsoft YaHei';
+}
+
+.newstitle{
+	transition: .3s;
+	color: #0E90D2;
+}
+.newstitle:hover{
+	text-decoration: underline;
+}
+.pubulication-table thead{
+	background-color: azure;
+}
+.pubulication-table td{
+	font-size: 0.9rem;
+}
+
+@media screen and (max-width: 960px) {
+	.main-container{
+		margin:0px;
+	}
+	.navbar-brand{
+		display: initial;
+	}
+	.nav-top-container{
+		display: none;
+	}
+}
