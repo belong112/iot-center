@@ -9,7 +9,7 @@ class Navbar extends Component {
             <div className="nav-top-container">
                 <div className="leftpart">
                     <img src={require('../img/ntu.png')} />
-                    <NavLink to="/" style={{color: '#1C4D83'}}><h3>Internet research center</h3></NavLink>
+                    <NavLink to="/" style={{color: '#1C4D83'}}><h3 style={{paddingLeft:'60px'}}>Internet research center</h3></NavLink>
                 </div>
                 <div className="rightpart">
                    home | test | support us  
@@ -30,13 +30,13 @@ class Navbar extends Component {
                               <NavLink className="nav-link" to="/research">研究項目</NavLink>
                             </li> 
                             <li className="nav-item active">
-                                <NavLink className="nav-link" to="/project">實驗室介紹</NavLink>
+                                <NavLink className="nav-link" to="/lab">實驗室介紹</NavLink>
                             </li>
                             <li className="nav-item active"> 
                               <NavLink className="nav-link" to="/news">最新消息</NavLink>
                             </li>                     
                             <li className="nav-item active">
-                                <NavLink className="nav-link" to="/project">團隊成員</NavLink>
+                                <NavLink className="nav-link" to="/member">團隊成員</NavLink>
                             </li>
                             <li className="nav-item active">
                                 <NavLink className="nav-link" to="/project">資源</NavLink>

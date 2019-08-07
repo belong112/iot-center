@@ -11,6 +11,17 @@ a:hover{
 	text-decoration: none;
 	color: initial;
 }
+
+.sidebar{
+	padding: 0px;
+	list-style-type: none;
+}
+.sidebar li{
+	border-bottom: 1px solid;
+	padding: 10px;
+	color: #C3D500;
+}
+
 .main-container{
 	margin: 0px 8% 0px 8%;
 	text-align: center;
@@ -33,6 +44,9 @@ a:hover{
   margin-left: 3px;
 	width: 66%;
 	float: left;
+}
+.leftnav h3{
+	color: '#1C4D83';
 }
 .rightpart{
 	padding-top: 10px;
@@ -95,6 +109,9 @@ a:hover{
 	background-color: #f3f3f3;
 	padding: 3% 5% 5% 5%;
 }
+.middle-container{
+	padding:15px;
+}
 
 .three-icons{
 	display: flex;
@@ -129,6 +146,7 @@ a:hover{
 }
 .big-container{
 	text-align: justify;
+	word-wrap: break-word;
 	margin-bottom: 50px;
 }
 .container{
@@ -202,7 +220,12 @@ a:hover{
 
 .buttons{
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+	text-align: center;
+}
+.buttons a{
+	padding-right: 10px;
+	padding-left:10px;
 }
 
 .tst{

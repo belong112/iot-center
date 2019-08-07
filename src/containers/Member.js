@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
 import Mycard from "../components/Mycard"
-import data from "../data/data.js"
-console.log(data)
+import temp from "../data/data"
+let data = temp.members
+
 class Member extends Component {
   componentDidMount(){
     $(window).scroll(function() {
@@ -14,6 +15,18 @@ class Member extends Component {
       }
     });
   }
+
+  membersid(id){
+      const phdmembers = data.filter(item => item.identity === id).map(member => (
+        <div className="col-lg-3 col-sm-6">
+          <Mycard image={member.image} name={member.name} text={member.text}/>  
+          <br/> 
+        </div>               
+      )
+      )
+    return phdmembers
+  }
+
 
   render(){
     const phdmembers = data.filter(item => item.identity === "phd").map(member => (
@@ -44,31 +57,35 @@ class Member extends Component {
               <h1>實驗室成員</h1>
               <hr/>
             </div>
-            <div>
-              <div className="buttons small-container">
-                <a href="#phd"><button className="btn btn-outline-primary">博士生</button></a>
-                <a href="#master"><button className="btn btn-outline-primary">碩士生</button></a>
-                <a href="#other"><button className="btn btn-outline-primary">其他</button></a>
-              </div>
-            </div>
-            <div id="phd" className="small-container">
-              <h2 className=" txtjustify yahei ">博士生</h2>
-              <div className="row">
-                {phdmembers}
-              </div>
-            </div>
-            <div id="master" className="small-container">
-              <h2 className="txtjustify yahei">碩士生</h2>
-              <div className="row">
-                {mastermembers}
-              </div>
-            </div> 
-            <div id="other" className="small-container">
-              <h2 className="txtjustify yahei">其他</h2> 
-              <div className="row">
-                {othermembers}
-              </div>
-            </div>                   
+            <div className='row'>
+              <div className="col-lg-2 big-container">
+                <ul className="sidebar">
+                  <li><a href="#1">電波</a></li>
+                  <li><a href="#2">大數據</a></li>
+                  <li><a href="#3">通訊</a></li>
+                </ul>
+              </div>     
+              <div className="col-lg-10">
+                <div id="1" className="small-container">
+                  <h2 className=" txtjustify yahei ">電波</h2>
+                  <div className="row">
+                    {phdmembers}
+                  </div>
+                </div>
+                <div id="2" className="small-container">
+                  <h2 className="txtjustify yahei">大數據</h2>
+                  <div className="row">
+                    {mastermembers}
+                  </div>
+                </div> 
+                <div id="3" className="small-container">
+                  <h2 className="txtjustify yahei">通訊</h2> 
+                  <div className="row">
+                    {othermembers}
+                  </div>
+                </div>
+              </div>         
+            </div>                 
         </div>
       </div>
     );
