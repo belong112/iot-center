@@ -14,7 +14,7 @@ class Researchdetail extends Component {
     });
   }
   render() {
-    let postids = ["5g","iot"]
+    let postids = ["5g","iot","VRAR"]
     const {id} = this.props.match.params;
     if (postids.includes(id))
     return(
@@ -34,7 +34,7 @@ class Researchdetail extends Component {
                 </div>
                 <div className="big-container col-lg-10">
                   <div className="small-container">
-                    <h3>Systems, Networks, and Control</h3>
+                    <h3>{id}</h3>
                     <p>Historically, the intellectual roots of LIDS lie in the field of Systems and Control Theory.  The original focus of this field was on the modeling, analysis, and feedback controller design for systems described by linear or nonlinear differential or difference equations, with special emphasis on issues of robustness, a subject in which LIDS played a pioneering role. More recently, numerous challenges have emerged, with the focus shifting towards complex, often distributed and networked, systems. Typical concerns that are driving the field stem from the high-dimensionality of such systems, the simultaneous presence of discrete and continuous dynamics (hybrid systems), the interaction between physical systems with humans or software, and the quantification of appropriate notions of information for the purpose of decision-making.</p>
                     <p>The Internet Research Laboratory (IRL), led by Professor Wanjiun Liao of the Department of Electrical Engineering in the National Taiwan University, is engaged in cutting-edge network protocol design. Research in the IRL focuses on provision of solutions for problems encountered in today's Internet as well as Next Generation Internet with more potential applications. Our research activities cover the whole internet, including Broadband Internet, Wireless Internet and Adhoc Technologies, etc.</p>
                   </div>

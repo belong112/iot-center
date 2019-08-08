@@ -30,21 +30,21 @@ class Member extends Component {
 
   render(){
     const phdmembers = data.filter(item => item.identity === "phd").map(member => (
-        <div className="col-lg-3 col-sm-6">
+        <div className="col-lg-4 col-sm-6">
           <Mycard image={member.image} name={member.name} text={member.text}/>  
           <br/> 
         </div>               
       )
     );
     const mastermembers = data.filter(item => item.identity === "master").map(member => (
-        <div className="col-lg-3 col-sm-6">
+        <div className="col-lg-4 col-sm-6">
           <Mycard image={member.image} name={member.name} text={member.text}/>  
           <br/> 
         </div>               
       )
     );
     const othermembers = data.filter(item => item.identity === "other").map(member => (
-        <div className="col-lg-3 col-sm-6">
+        <div className="col-lg-4 col-sm-6">
           <Mycard image={member.image} name={member.name} text={member.text}/>  
           <br/> 
         </div>               
@@ -58,13 +58,13 @@ class Member extends Component {
               <hr/>
             </div>
             <div className='row'>
-              <div className="col-lg-2 big-container">
+              <aside className="col-lg-2 big-container">
                 <ul className="sidebar">
                   <li><a href="#1">電波</a></li>
                   <li><a href="#2">大數據</a></li>
                   <li><a href="#3">通訊</a></li>
                 </ul>
-              </div>     
+              </aside>     
               <div className="col-lg-10">
                 <div id="1" className="small-container">
                   <h2 className=" txtjustify yahei ">電波</h2>

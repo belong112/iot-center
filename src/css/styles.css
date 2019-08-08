@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Bitter:700|Noto+Sans+TC&display=swap');
+html{
+	scroll-behavior: smooth;
+}
 body{
 	font-size: 18px;
 	background: #fff;  /* fallback for old browsers */
@@ -61,6 +64,7 @@ a:hover{
 	color: #444;
 	background-size:100% 100%;
 	font-family: 'bitter';
+	height: 150px;
 }
 .nav-bot-container h3{
 	color: #C3D500;
@@ -103,6 +107,9 @@ a:hover{
 .nav-item:hover{
 	transition: .3s;
 	border: 1.5px solid #FFF;
+}
+.dropdown:hover>.dropdown-menu{
+		display: block;
 }
 
 .index-container{
@@ -236,12 +243,18 @@ a:hover{
 .yahei{
 	font-family: 'Microsoft YaHei';
 }
+.event-container{
+	border-bottom: 1px solid;
+	padding-bottom: 5px;
+	margin-bottom: 30px;
+}
 
 .newstitle{
 	transition: .3s;
 	color: #0E90D2;
 }
 .newstitle:hover{
+	color: #0E90D2;
 	text-decoration: underline;
 }
 .pubulication-table thead{

@@ -12,7 +12,7 @@ class Navbar extends Component {
                     <NavLink to="/" style={{color: '#1C4D83'}}><h3 style={{paddingLeft:'60px'}}>Internet research center</h3></NavLink>
                 </div>
                 <div className="rightpart">
-                   home | test | support us  
+                   <a>EN</a> | <a>CH</a>  
                 </div>
             </div>     
             <div className="navbar-container">
@@ -26,12 +26,26 @@ class Navbar extends Component {
                             <li className="nav-item active">
                                 <NavLink className="nav-link" to="/">首頁</NavLink>
                             </li>                        
-                            <li className="nav-item active"> 
-                              <NavLink className="nav-link" to="/research">研究項目</NavLink>
-                            </li> 
-                            <li className="nav-item active">
-                                <NavLink className="nav-link" to="/lab">實驗室介紹</NavLink>
+                            <li className="nav-item active dropdown">                               
+                                <a className="nav-link dropdown-toggle" href="/research" id="navbarDropdown" data-toggle="dropdown" >
+                                  研究計畫
+                                </a>
+                                <div class="dropdown-menu">
+                                  <NavLink to="/research/5g"><span className='dropdown-item'>5g網路</span></NavLink>
+                                  <NavLink to="/research/iot"><span className='dropdown-item'>智慧物聯網</span></NavLink>
+                                  <NavLink to="/research/VRAR"><span className='dropdown-item'>VR/AR</span></NavLink>
+                                </div>
                             </li>
+                            <li className="nav-item active dropdown">                               
+                                <a className="nav-link dropdown-toggle" href="/research" id="navbarDropdown"data-toggle="dropdown">
+                                    實驗室介紹  
+                                </a>
+                                <div class="dropdown-menu">
+                                  <NavLink to="/lab/a"><span className='dropdown-item'>a lab</span></NavLink>
+                                  <NavLink to="/lab/b"><span className='dropdown-item'>b lab</span></NavLink>
+                                  <NavLink to="/lab/g"><span className='dropdown-item'>g lab</span></NavLink>
+                                </div>
+                            </li>            
                             <li className="nav-item active"> 
                               <NavLink className="nav-link" to="/news">最新消息</NavLink>
                             </li>                     
