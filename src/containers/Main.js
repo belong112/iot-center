@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Home from "./Home.js"
+import About from "./About.js"
 import Contact from "./Contact.js"
 import Member from "./Member.js"
 import News from "./News.js"
@@ -19,6 +20,7 @@ class Main extends Component {
       <div>
         <Navbar/>
         <Switch>
+          <Route path="/about" component={About} />
           <Route exact path="/lab" component={Lab} />
           <Route path="/lab/:id" component={Labdetail} />
           <Route exact path="/research" component={Research} />

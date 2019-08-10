@@ -7,9 +7,11 @@ import Typography from '@material-ui/core/Typography';
 class Mycard extends Component {
   render() {
     return (
-      <div>
+      <div style={{textAlign:"center"}}>
         <Card >
-            <img src={this.props.image} style={{height:"150px"}}/>
+            <div className="cardimg mt-1">
+              <img src={this.props.image} style={{height:"150px"}}/>
+            </div>
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
                 {this.props.name}

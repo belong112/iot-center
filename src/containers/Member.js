@@ -17,14 +17,13 @@ class Member extends Component {
   }
 
   membersid(id){
-      const phdmembers = data.filter(item => item.identity === id).map(member => (
+      const para = data.filter(item => item.identity === id).map(member => (
         <div className="col-lg-3 col-sm-6">
           <Mycard image={member.image} name={member.name} text={member.text}/>  
           <br/> 
         </div>               
-      )
-      )
-    return phdmembers
+      ))
+    return para
   }
 
 

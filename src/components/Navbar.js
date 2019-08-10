@@ -23,50 +23,48 @@ class Navbar extends Component {
                     <a className="navbar-brand" style={{color:'white'}}>Internet Research Center</a>            
                     <div className="collapse navbar-collapse navbar-items" id="navbarsExample06">
                         <ul className="navbar-nav mr-auto">
-                            <li className="nav-item active">
-                                <NavLink className="nav-link" to="/">首頁</NavLink>
+                            <li className="nav-item">
+                                <NavLink className="nav-link active" to="/">首頁</NavLink>
+                            </li> 
+                            <li className="nav-item">
+                                <NavLink className="nav-link active" to="/about">關於我們</NavLink>
                             </li>                        
-                            <li className="nav-item active dropdown">                               
-                                <a className="nav-link dropdown-toggle" href="/research" id="navbarDropdown" data-toggle="dropdown" >
+                            <li className="nav-item dropdown">                               
+                                <NavLink className="nav-link active dropdown-toggle" to="/research" id="navbarDropdown">
                                   研究計畫
-                                </a>
+                                </NavLink>
                                 <div class="dropdown-menu">
                                   <NavLink to="/research/5g"><span className='dropdown-item'>5g網路</span></NavLink>
                                   <NavLink to="/research/iot"><span className='dropdown-item'>智慧物聯網</span></NavLink>
                                   <NavLink to="/research/VRAR"><span className='dropdown-item'>VR/AR</span></NavLink>
                                 </div>
                             </li>
-                            <li className="nav-item active dropdown">                               
-                                <a className="nav-link dropdown-toggle" href="/research" id="navbarDropdown"data-toggle="dropdown">
+                            <li className="nav-item dropdown">                               
+                                <NavLink className="nav-link active dropdown-toggle" to="/lab" id="navbarDropdown">
                                     實驗室介紹  
-                                </a>
+                                </NavLink>
                                 <div class="dropdown-menu">
                                   <NavLink to="/lab/a"><span className='dropdown-item'>a lab</span></NavLink>
                                   <NavLink to="/lab/b"><span className='dropdown-item'>b lab</span></NavLink>
                                   <NavLink to="/lab/g"><span className='dropdown-item'>g lab</span></NavLink>
                                 </div>
                             </li>            
-                            <li className="nav-item active"> 
-                              <NavLink className="nav-link" to="/news">最新消息</NavLink>
+                            <li className="nav-item"> 
+                              <NavLink className="nav-link active" to="/news">最新消息</NavLink>
                             </li>                     
-                            <li className="nav-item active">
-                                <NavLink className="nav-link" to="/member">團隊成員</NavLink>
+                            <li className="nav-item">
+                                <NavLink className="nav-link active" to="/member">團隊成員</NavLink>
                             </li>
-                            <li className="nav-item active">
-                                <NavLink className="nav-link" to="/project">資源</NavLink>
+                            <li className="nav-item">
+                                <NavLink className="nav-link active" to="/project">資源</NavLink>
                             </li>
-                            <li className="nav-item active">
-                                <NavLink className="nav-link" to="/contact">聯絡我們</NavLink>
+                            <li className="nav-item">
+                                <NavLink className="nav-link active" to="/contact">聯絡我們</NavLink>
                             </li>                         
                         </ul>
                     </div>
                 </nav>            
-            </div>
-            <div className="nav-bot-container txtjustify"> 
-                <h3>LABORATORY INFORMATION DECISION SYSTEMS</h3> 
-                <a target="_blank" href="https://www.ntu.edu.tw/" ></a>
-                <h5>National Taiwan University</h5>          
-            </div>
+            </div>            
         </div>
       </header>
     );
