@@ -56,9 +56,6 @@ class Navbar extends Component {
                                 <NavLink className="nav-link active" to="/member">團隊成員</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link active" to="/project">資源</NavLink>
-                            </li>
-                            <li className="nav-item">
                                 <NavLink className="nav-link active" to="/contact">聯絡我們</NavLink>
                             </li>                         
                         </ul>
