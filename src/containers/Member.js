@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import $ from 'jquery'
 import Mycard from "../components/Mycard"
 import temp from "../data/data"
+import defaultimg from "../img/member_picture/default.png"
 let data = temp.members
 
 class Member extends Component {
@@ -16,39 +17,17 @@ class Member extends Component {
     });
   }
 
-  membersid(id){
-      const para = data.filter(item => item.identity === id).map(member => (
-        <div className="col-lg-3 col-sm-6">
-          <Mycard image={member.image} name={member.name} text={member.text}/>  
+  create_members_card(id){
+      const cards = data.filter(item => item.identity === id).map(member => (
+        <div className="col-lg-4 col-sm-6">
+          <Mycard image={member.image || defaultimg} name={member.name || 'N/A'} text={member.text || 'N/A'}/>  
           <br/> 
         </div>               
       ))
-    return para
+    return cards
   }
 
-
   render(){
-    const phdmembers = data.filter(item => item.identity === "phd").map(member => (
-        <div className="col-lg-4 col-sm-6">
-          <Mycard image={member.image} name={member.name} text={member.text}/>  
-          <br/> 
-        </div>               
-      )
-    );
-    const mastermembers = data.filter(item => item.identity === "master").map(member => (
-        <div className="col-lg-4 col-sm-6">
-          <Mycard image={member.image} name={member.name} text={member.text}/>  
-          <br/> 
-        </div>               
-      )
-    );
-    const othermembers = data.filter(item => item.identity === "other").map(member => (
-        <div className="col-lg-4 col-sm-6">
-          <Mycard image={member.image} name={member.name} text={member.text}/>  
-          <br/> 
-        </div>               
-      )
-    );
     return (
       <div className="main-container">
         <div id='test' className='index-container'>
@@ -68,19 +47,19 @@ class Member extends Component {
                 <div id="1" className="small-container">
                   <h2 className=" txtjustify yahei ">電波</h2>
                   <div className="row">
-                    {phdmembers}
+                    {this.create_members_card('phd')}
                   </div>
                 </div>
                 <div id="2" className="small-container">
                   <h2 className="txtjustify yahei">大數據</h2>
                   <div className="row">
-                    {mastermembers}
+                    {this.create_members_card('master')}
                   </div>
                 </div> 
                 <div id="3" className="small-container">
                   <h2 className="txtjustify yahei">通訊</h2> 
                   <div className="row">
-                    {othermembers}
+                    {this.create_members_card('other')}
                   </div>
                 </div>
               </div>         

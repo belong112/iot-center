@@ -8,7 +8,7 @@ class Navbar extends Component {
         <div className="main-container">   
             <div className="nav-top-container">
                 <div className="leftpart">
-                    <img src={require('../img/ntu.png')} />
+                    <a href="https://www.ntu.edu.tw/" target="_blank"><img src={require('../img/ntu.png')} /></a>
                     <NavLink to="/" style={{color: '#1C4D83'}}><h3 style={{paddingLeft:'60px'}}>Internet research center</h3></NavLink>
                 </div>
                 <div className="rightpart">

@@ -237,16 +237,6 @@ a:hover{
 	max-height: 150px;
 }
 
-.modifybox{
-	height: 200px;
-}
-
-.modifytext{
-	overflow:hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-}
-
 @media screen and (max-width: 960px) {
 	.main-container{
 		margin:0px;

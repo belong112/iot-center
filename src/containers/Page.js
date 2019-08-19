@@ -37,8 +37,10 @@ class Page extends Component {
           </div>           
       </div>
     ):(
-      <div>
-        <h3>Error: Post #{id} NOT FOUND</h3>
+      <div className="main-container">          
+          <div className='index-container'>
+            <h3>Error: Post #{id} NOT FOUND</h3>
+          </div>           
       </div>
     )
   }
