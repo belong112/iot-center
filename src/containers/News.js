@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import bgimg from "../img/6.jpg"
 import horse from "../img/horse.jpg"
+import { NavLink } from "react-router-dom"
 import $ from 'jquery'
+import temp from "../data/data.js"
+var data = temp.posts
 
 class News extends Component {
   componentDidMount(){
@@ -13,8 +15,27 @@ class News extends Component {
           $('.back-to-top').css('opacity','0');
       }
     });
+
+    $(function(){
+        var len = 135; // 超過50個字以"..."取代
+        $(".JQellipsis").each(function(i){
+            if($(this).text().length>len){
+                $(this).attr("title",$(this).text());
+                var text=$(this).text().substring(0,len-1)+"...";
+                $(this).text(text);
+            }
+        });
+    });
   }
   render() {
+    const posts = data.map((item,id) => (
+      <div class="event-container">
+        <h5>{item.date}</h5>
+        <h3><NavLink className="newstitle" to={`/news/${id}`}>{item.title}</NavLink></h3>
+        <p className="JQellipsis">&emsp;&emsp;{item.text}</p>
+      </div>              
+      )
+    );
     return (
       <div className="main-container">          
           <div className='index-container'>
@@ -31,16 +52,7 @@ class News extends Component {
                 </ul>
               </aside>  
               <div className="col-lg-10">
-                <div class="event-container">
-                  <h5>2019/7/21</h5>
-                  <h3><a className="newstitle" href="/page/0">高雄大淹水 韓國瑜明卻北上「拜會大老」 網轟爆</a></h3>
-                  <p>&emsp;Electrical Engineering from the University of Southern California, Los Angeles, California, USA, in 1997. She is a Distinguished Professor of Electrical Engineering, National Taiwan University (NTU), Taipei, Taiwan. She is an Adjunct Research Fellow of Research Center for Information Techonology Innovation, Amercian Sinica, Taiwan. She is the General Director of Engineering Division in the Ministry of Science and Technology in Taiwan. Her research interests are focused on the design and analysis of wireless and multimedia networking, green communications, on-line social network analysis, and cloud networking.</p>
-                </div>
-                <div className="event-container">
-                  <h5>2019/7/15</h5>
-                  <h3><a className="newstitle" href="/page/1">壓倒性勝出 韓國瑜：心中沒有一絲一毫的喜悅</a></h3>
-                  <p>&emsp;國民黨今天公布總統初選民調結果，高雄市長韓國瑜以44.80％的支持率壓倒性的勝出。韓國瑜今出席民調結果公布記者會，他表示，自己勝出，心中沒有一絲一毫的喜悅和歡樂，只感到無比沉重的壓力。希望承擔這樣的責任，可以得到更多朋友的幫忙，一起來開創台灣更多美好的未來，一起幫台灣子孫萬代開闢更燦爛的道路...</p>
-                </div>
+                {posts}
               </div>                                            
             </div> 
           </div>           

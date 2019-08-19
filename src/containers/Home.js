@@ -4,8 +4,10 @@ import { Table } from 'reactstrap'
 import temp from "../data/data"
 import Mynews from "../components/Mynews"
 import test from "../img/4.jpg"
-import rick from "../img/member_picture/morty.jpg"
+import rick from "../img/6.jpg"
 let data = temp.members
+let data_post = temp.posts
+let data_news = temp.news
 
 class Home extends Component {
     componentDidMount() {
@@ -19,6 +21,9 @@ class Home extends Component {
         });
     }
     render() {
+      const lists = data_post.map(item=>{
+        return <li>({item.date}) {item.title}</li>
+      })
       return (
           <div className="main-container">
             <div className="nav-bot-container"> 
@@ -33,8 +38,8 @@ class Home extends Component {
                     <h2 className="yahei"><i className="fas fa-newspaper"></i> 最新消息</h2>  
                   </div>
                   <div className="row">
-                    <Mynews image={rick} />
-                    <Mynews image={test} />
+                    <Mynews image={rick} text={data_news[0].text} title={data_news[0].title} />
+                    <Mynews image={test} text={data_news[1].text} title={data_news[1].title}/>
                   </div>            
                 </div>
               </div>  
@@ -51,6 +56,7 @@ class Home extends Component {
                   </div> 
                   <div className="p-container">   
                     <ul>
+                      {lists}
                       <li>(2019/10/2) test a big apple</li>
                       <li>(2019-08-05) 【2020聯詠科技研發替代役/預聘 招募計畫開跑囉! 】</li>
                       <li>(2019-08-05) 108電資學院TA研習公告</li>

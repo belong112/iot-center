@@ -10,8 +10,8 @@ class Mynews extends Component {
           </div>
           <div className="col-md-8">
             <div className="card-body">
-              <h5 className="card-title">SoberMotion行車安全確認系統 參展COMPUTEX 2018成焦點</h5>
-              <p className="card-text">敬賀 游創文博士與黃明琪醫師研究團隊於COMPUTEX 2018大放異彩！.</p>
+              <h5 className="card-title">{this.props.title}</h5>
+              <p className="card-text">{this.props.text}</p>
             </div>
           </div>
         </div>

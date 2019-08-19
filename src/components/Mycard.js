@@ -10,7 +10,7 @@ class Mycard extends Component {
       <div style={{textAlign:"center"}}>
         <Card >
             <div className="cardimg mt-1">
-              <img src={this.props.image} style={{height:"150px"}}/>
+              <img src={this.props.image} className="rounded" style={{height:"150px"}}/>
             </div>
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
