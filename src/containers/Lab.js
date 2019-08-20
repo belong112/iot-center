@@ -22,13 +22,13 @@ class Researchdetail extends Component {
                 <hr/>
               </div>
               <div className="middle-container row">
-                <div className="col-lg-2 big-container">
+                <aside className="col-lg-2 big-container aside">
                   <ul className="sidebar">
                     <li><NavLink to="/lab/a">a實驗室</NavLink></li>                  
                     <li><NavLink to="/lab/b">b實驗室</NavLink></li>
                     <li><NavLink to="/lab/g">g實驗室</NavLink></li>
                   </ul>
-                </div>
+                </aside>
                 <div className="big-container col-lg-10">
                   <div className="small-container">
                     <h3>Systems, Networks, and Control Lab</h3>

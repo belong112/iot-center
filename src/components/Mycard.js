@@ -1,6 +1,5 @@
 import React,{ Component } from 'react';
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 
@@ -10,7 +9,7 @@ class Mycard extends Component {
       <div style={{textAlign:"center"}}>
         <Card >
             <div className="cardimg mt-1">
-              <img src={this.props.image} className="rounded" style={{height:"150px"}}/>
+              <img src={this.props.image} className="rounded" style={{height:"150px"}} alt="profilepicture"/>
             </div>
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">

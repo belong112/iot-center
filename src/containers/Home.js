@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
-import { Table } from 'reactstrap'
 import temp from "../data/data"
 import Mynews from "../components/Mynews"
 import test from "../img/4.jpg"
 import rick from "../img/6.jpg"
-let data = temp.members
 let data_post = temp.posts
 let data_news = temp.news
 
@@ -28,8 +26,9 @@ class Home extends Component {
           <div className="main-container">
             <div className="nav-bot-container"> 
                 <h3>LABORATORY INFORMATION DECISION SYSTEMS</h3> 
-                <a target="_blank" href="https://www.ntu.edu.tw/" ></a>
-                <h5>National Taiwan University</h5>          
+                <a target="_blank" rel="noopener noreferrer" href="https://www.ntu.edu.tw/">
+                  <h5>National Taiwan University</h5>
+                </a>
             </div>
             <div className='index-container'>
               <div className="small-container row">               

@@ -22,7 +22,7 @@ class Research extends Component {
                 <hr/>
               </div>
               <div className="middle-container row">
-                <aside className="col-lg-2 big-container">
+                <aside className="col-lg-2 big-container aside">
                   <ul className="sidebar">
                     <li><NavLink to="/research/5g">5g 網路</NavLink></li>                  
                     <li><NavLink to="/research/iot">智慧物聯網</NavLink></li>

@@ -8,11 +8,11 @@ class Navbar extends Component {
         <div className="main-container">   
             <div className="nav-top-container">
                 <div className="leftpart">
-                    <a href="https://www.ntu.edu.tw/" target="_blank"><img src={require('../img/ntu.png')} /></a>
+                    <a href="https://www.ntu.edu.tw/" target="_blank" rel="noopener noreferrer"><img alt="logo" src={require('../img/ntu.png')} /></a>
                     <NavLink to="/" style={{color: '#1C4D83'}}><h3 style={{paddingLeft:'60px'}}>Internet research center</h3></NavLink>
                 </div>
                 <div className="rightpart">
-                   <a>EN</a> | <a>CH</a>  
+                   EN | CH  
                 </div>
             </div>     
             <div className="navbar-container">
@@ -20,7 +20,7 @@ class Navbar extends Component {
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>   
-                    <a className="navbar-brand" style={{color:'white'}}>Internet Research Center</a>            
+                    <span className="navbar-brand" style={{color:'white'}}>Internet Research Center</span>            
                     <div className="collapse navbar-collapse navbar-items" id="navbarsExample06">
                         <ul className="navbar-nav mr-auto">
                             <li className="nav-item">

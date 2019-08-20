@@ -66,7 +66,6 @@ a:hover{
 .nav-bot-container{
 	background-image: url(../img/bg.jpg);
 	padding: 2% 7% 2% 7%;
-	color: #eee;
 	background-position: center 60%; 
 	background-size:100%;
 	font-family: 'bitter';
@@ -83,6 +82,7 @@ a:hover{
 	/*line-height: inherit;*/
 	/*margin-left: 50px;*/
 	font-family: arial;
+	color: #eee;
 }
 
 .navbar-container{
@@ -245,6 +245,9 @@ a:hover{
 		display: initial;
 	}
 	.nav-top-container{
+		display: none;
+	}
+	.aside{
 		display: none;
 	}
 }

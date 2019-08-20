@@ -25,13 +25,13 @@ class Researchdetail extends Component {
                 <hr/>
               </div>
               <div className="middle-container row">
-                <div className="col-lg-2 big-container">
+                <aside className="col-lg-2 big-container aside">
                   <ul className="sidebar">
                     <li><NavLink to="/research/5g">5g 網路</NavLink></li>                  
                     <li><NavLink to="/research/iot">智慧物聯網</NavLink></li>
                     <li><NavLink to="/research/VRAR">VR/AR</NavLink></li>
                   </ul>
-                </div>
+                </aside>
                 <div className="big-container col-lg-10">
                   <div className="small-container">
                     <h3>{id}</h3>

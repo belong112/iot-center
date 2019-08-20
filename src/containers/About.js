@@ -22,11 +22,11 @@ class About extends Component {
                 <hr/>
               </div>
               <div className="middle-container row">
-                <div className="col-lg-2 big-container">
+                <aside className="col-lg-2 big-container aside">
                   <ul className="sidebar">
                     <li><NavLink to="/about">計畫緣起</NavLink></li>                  
                   </ul>
-                </div>
+                </aside>
                 <div className="big-container col-lg-10">
                   <div className="small-container">
                     <h3>計畫緣起</h3>
