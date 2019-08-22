@@ -109,9 +109,9 @@ a:hover{
 	margin-left: 3px;
 	margin-right: 3px;
 }
-.nav-item:hover{
+.navlink:hover{
 	transition: .3s;
-	color: white;
+	color: #fff;
 }
 
 .dropdown:hover>.dropdown-menu{

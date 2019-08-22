@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import {NavLink} from "react-router-dom";
 
 class Navbar extends Component {
+  componentDidMount() {
+    $('.nav-link').on('click', function(){
+      $('.navbar-collapse').removeClass('show');
+    });
+  }
   render() {
     return (
     	<header>
@@ -24,7 +29,7 @@ class Navbar extends Component {
                     <div className="collapse navbar-collapse navbar-items" id="navbarsExample06">
                         <ul className="navbar-nav mr-auto">
                             <li className="nav-item">
-                                <NavLink className="nav-link active" to="/">首頁</NavLink>
+                                <NavLink className="active nav-link" to="/">首頁</NavLink>
                             </li> 
                             <li className="nav-item">
                                 <NavLink className="nav-link active" to="/about">關於我們</NavLink>
