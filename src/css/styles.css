@@ -220,6 +220,9 @@ a:hover{
 .cardimg img{
 	max-height: 150px;
 }
+.JQellipsis{
+	white-space: pre-wrap;
+}
 
 @media screen and (max-width: 960px) {
 	.main-container{

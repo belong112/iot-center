@@ -72,7 +72,7 @@ class News extends Component {
       <div className="event-container">
         <h5>{item.date}</h5>
         <h3><NavLink className="newstitle" to={`/news/${id}`}>{item.title||"daw"}</NavLink></h3>
-        <p className="JQellipsis">&emsp;&emsp;{item.text}</p>
+        <p className="JQellipsis">{item.text}</p>
       </div>              
       )}
     );
