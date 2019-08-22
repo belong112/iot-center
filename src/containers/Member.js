@@ -31,12 +31,12 @@ class Member extends Component {
     return (
       <div className="main-container">
         <div id='test' className='index-container'>
-            <div className="txtjustify yahei">
+            <div className="text-justify yahei">
               <h1>實驗室成員</h1>
               <hr/>
             </div>
             <div className='row'>
-              <aside className="col-lg-2 big-container">
+              <aside className="col-lg-2 mb-5">
                 <ul className="sidebar">
                   <li><a href="#1">電波</a></li>
                   <li><a href="#2">大數據</a></li>
@@ -44,20 +44,20 @@ class Member extends Component {
                 </ul>
               </aside>     
               <div className="col-lg-10">
-                <div id="1" className="small-container">
-                  <h2 className=" txtjustify yahei ">電波</h2>
+                <div id="1" className="mb-4">
+                  <h2 className=" text-justify yahei ">電波</h2>
                   <div className="row">
                     {this.create_members_card('phd')}
                   </div>
                 </div>
-                <div id="2" className="small-container">
-                  <h2 className="txtjustify yahei">大數據</h2>
+                <div id="2" className="mb-4">
+                  <h2 className="text-justify yahei">大數據</h2>
                   <div className="row">
                     {this.create_members_card('master')}
                   </div>
                 </div> 
-                <div id="3" className="small-container">
-                  <h2 className="txtjustify yahei">通訊</h2> 
+                <div id="3" className="mb-4">
+                  <h2 className="text-justify yahei">通訊</h2> 
                   <div className="row">
                     {this.create_members_card('other')}
                   </div>

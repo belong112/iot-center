@@ -122,24 +122,12 @@ a:hover{
 	background-color: #f3f3f3;
 	padding: 3% 5% 5% 5%;
 }
-.middle-container{
-	padding:15px;
-}
-
 .words p{
 	margin: 0;
 	padding: 10px 0px 0px 0px;
 	font-weight: 700;
 }
-.big-container{
-	margin-bottom: 50px;
-}
-.small-container{
-	margin-bottom: 30px;
-}
-.container{
-	text-align: center;
-}
+
 .title-container{
 	padding: 2px;
 	background-color: var(--main-light-blue);
@@ -179,10 +167,6 @@ a:hover{
 	color: #555;
 	margin: 100px 0px 100px 0px
 }
-.txtjustify{
-	text-align: justify;
-}
-
 .buttons{
 	display: flex;
 	justify-content: center;

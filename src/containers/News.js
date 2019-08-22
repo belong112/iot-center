@@ -84,11 +84,11 @@ class News extends Component {
     return (
       <div className="main-container">          
           <div className='index-container'>
-            <div className="yahei txtjustify">
+            <div className="yahei text-justify">
               <h1>最新消息</h1>
               <hr/>
             </div>
-            <div className="big-container tst row">
+            <div className="mb-3 tst row">
               <aside className="col-lg-2 big-container aside">
                 <ul className="sidebar">
                   <li><NavLink to="/news">最新消息</NavLink></li>
