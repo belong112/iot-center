@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c389c556189b05ec0e12039f5fb8e354",
+    "revision": "61289b835e6827cc8abc117ee1429d66",
     "url": "/iot-center/index.html"
   },
   {
-    "revision": "f6c3374703d60a3ab3b5",
-    "url": "/iot-center/static/css/main.020b0be7.chunk.css"
+    "revision": "9091edc4cb4e3f6f1cb1",
+    "url": "/iot-center/static/css/main.aa342dfd.chunk.css"
   },
   {
     "revision": "1e58a9005b378a24130e",
     "url": "/iot-center/static/js/2.53880a38.chunk.js"
   },
   {
-    "revision": "f6c3374703d60a3ab3b5",
-    "url": "/iot-center/static/js/main.f485694c.chunk.js"
+    "revision": "9091edc4cb4e3f6f1cb1",
+    "url": "/iot-center/static/js/main.aacd5ffe.chunk.js"
   },
   {
     "revision": "116f6f8a21cd32beebc4",
