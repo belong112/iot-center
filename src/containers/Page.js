@@ -25,7 +25,7 @@ class Page extends Component {
             <div className="yahei text-justify">
               <h1>最新消息</h1>
               <hr/>
-            </div>
+            </div>            
             <div class="mb-5 row">
               <aside className="col-lg-2 aside">
                 <ul className="sidebar">

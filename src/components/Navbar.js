@@ -42,7 +42,7 @@ class Navbar extends Component {
                                 <NavLink className="nav-link active dropdown-toggle" to="/research" id="navbarDropdown">
                                   研究計畫
                                 </NavLink>
-                                <div class="dropdown-menu">
+                                <div className="dropdown-menu">
                                   <NavLink to="/research/5g"><span className='dropdown-item'>5g網路</span></NavLink>
                                   <NavLink to="/research/iot"><span className='dropdown-item'>智慧物聯網</span></NavLink>
                                   <NavLink to="/research/VRAR"><span className='dropdown-item'>VR/AR</span></NavLink>
@@ -52,7 +52,7 @@ class Navbar extends Component {
                                 <NavLink className="nav-link active dropdown-toggle" to="/lab" id="navbarDropdown">
                                     實驗室介紹  
                                 </NavLink>
-                                <div class="dropdown-menu">
+                                <div className="dropdown-menu">
                                   <NavLink to="/lab/a"><span className='dropdown-item'>a lab</span></NavLink>
                                   <NavLink to="/lab/b"><span className='dropdown-item'>b lab</span></NavLink>
                                   <NavLink to="/lab/g"><span className='dropdown-item'>g lab</span></NavLink>

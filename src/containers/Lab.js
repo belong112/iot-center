@@ -13,12 +13,23 @@ class Researchdetail extends Component {
       }
     });
   }
+
+  control (event) {
+    window.location = (`./lab/${event.target.value}`)  
+  }
+
   render() {
     return(
       <div className="main-container">           
             <div className='index-container'>
               <div className="col-lg-12 text-justify yahei">
                 <h1>實驗室介紹</h1>
+                 <select onChange={this.control} className="my-2 custom-select">
+                  <option>Select a Lab</option>
+                  <option value="a">a lab</option>
+                  <option value="b">b lab</option>
+                  <option value="g">g lab</option>
+                </select>
                 <hr/>
               </div>
               <div className="p-2 row">
@@ -40,7 +51,6 @@ class Researchdetail extends Component {
             </div>          
         </div>
     );
-    
   }
 }
 export default Researchdetail;

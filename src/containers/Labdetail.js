@@ -13,6 +13,11 @@ class Researchdetail extends Component {
       }
     });
   }
+
+  control (event) {
+    window.location = (`./${event.target.value}`)  
+  }
+
   render() {
     let postids = ["a","b","g"]
     const {id} = this.props.match.params;
@@ -22,6 +27,12 @@ class Researchdetail extends Component {
             <div className='index-container'>
               <div className="col-lg-12 text-justify yahei">
                 <h1>實驗室介紹</h1>
+                <select onChange={this.control} className="phone_select my-2 custom-select">
+                  <option value="..">Select a Lab</option>
+                  <option value="a">a lab</option>
+                  <option value="b">b lab</option>
+                  <option value="g">g lab</option>
+                </select>
                 <hr/>
               </div>
               <div className="p-2 row">
