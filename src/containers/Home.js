@@ -45,7 +45,7 @@ class Home extends Component {
               <div className="mb-3 row">                
                 <div className="col-lg">
                   <div className="p-1 text-center title-container">
-                    <h2 className="yahei"><i className="fas fa-tv"></i> 相關報導</h2>
+                    <h2 className="yahei"><i className="fas fa-tv"></i> 關於中心</h2>
                   </div>
                   <p className="p-container">&emsp;&emsp;「電信研究中心」於81年3月成立，並於106年更名為「物聯網研究中心」（以下簡稱本中心）。本中心整合國立臺灣大學電機資訊學院相關系所，為配合國家經濟發展及未來著眼跨領域研究，以期達成從感測器、通訊網路、應用服務至關鍵性軟硬體平台之深耕研究，並拓展與物聯網應用與系統相關領域專家之合作。</p>
                 </div>
@@ -55,11 +55,7 @@ class Home extends Component {
                   </div> 
                   <div className="p-container">   
                     <ul>
-                      {lists}
-                      <li>(2019/10/2) test a big apple</li>
-                      <li>(2019-08-05) 【2020聯詠科技研發替代役/預聘 招募計畫開跑囉! 】</li>
-                      <li>(2019-08-05) 108電資學院TA研習公告</li>
-                      <li>(2019-08-02) 電子所108學年度產業贊助博士級人才培育獎學金申請公告</li>                      
+                      {lists}                                            
                     </ul>
                   </div>
                 </div>

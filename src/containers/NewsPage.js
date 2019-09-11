@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom"
 let data = temp.posts
 let ids = temp.posts_number
 
-class Page extends Component {
+class NewsPage extends Component {
     componentDidMount() {
         $(window).scroll(function() {
             // checks if window is scrolled more than 500px, adds/removes solid class
@@ -35,9 +35,9 @@ class Page extends Component {
                 </ul>
               </aside>  
               <div class="col-lg-10 mb-3 text-justify">
-                <h4>{data[id].date}</h4>
-                <h3>{data[id].title}</h3>
-                <p>&emsp;{data[id].text}</p>
+                <h4>{data[id-1].date}</h4>
+                <h3>{data[id-1].title}</h3>
+                <p className="JQellipsis">{data[id-1].text}</p>
               </div>                                                           
             </div> 
           </div>           
@@ -51,4 +51,4 @@ class Page extends Component {
         )
     }
 }
-export default Page;
+export default NewsPage;

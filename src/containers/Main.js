@@ -4,7 +4,7 @@ import About from "./About.js"
 import Contact from "./Contact.js"
 import Member from "./Member.js"
 import News from "./News.js"
-import Page from "./Page.js"
+import NewsPage from "./NewsPage.js"
 import Research from "./Research"
 import Researchdetail from "./Researchdetail"
 import Lab from "./Lab"
@@ -27,7 +27,7 @@ class Main extends Component {
           <Route exact path="/research" component={Research} />
           <Route path="/research/:id" component={Researchdetail} />
           <Route exact path="/news" component={News} />
-          <Route path="/news/:id" component={Page} />
+          <Route path="/news/:id" component={NewsPage} />
           <Route path="/member" component={Member} />
           <Route path="/contact" component={Contact} />
           <Route path="/" component={Home} />

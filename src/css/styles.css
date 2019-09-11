@@ -27,6 +27,7 @@ a:hover{
 .sidebar li{
 	border-bottom: 1.2px solid;
 	padding: 10px;
+	font-size: 0.95rem;
 	color: #C3D500;
 }
 

@@ -24,7 +24,7 @@ class Researchdetail extends Component {
             <div className='index-container'>
               <div className="col-lg-12 text-justify yahei">
                 <h1>實驗室介紹</h1>
-                 <select onChange={this.control} className="my-2 custom-select">
+                 <select onChange={this.control} className="phone_select my-2 custom-select">
                   <option>Select a Lab</option>
                   <option value="a">a lab</option>
                   <option value="b">b lab</option>

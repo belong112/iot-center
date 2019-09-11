@@ -13,7 +13,7 @@ class Mycard extends Component {
             </div>
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
-                {this.props.name}
+                {this.props.name}教授
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
                 研究領域 : {this.props.text}

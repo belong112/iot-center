@@ -30,11 +30,12 @@ class About extends Component {
                 <div className="mb-3 col-lg-10">
                   <div className="mb-4">
                     <h3>計畫緣起</h3>
-                    <p>Historically, the intellectual roots of LIDS lie in the field of Systems and Control Theory.  The original focus of this field was on the modeling, analysis, and feedback controller design for systems described by linear or nonlinear differential or difference equations, with special emphasis on issues of robustness, a subject in which LIDS played a pioneering role. More recently, numerous challenges have emerged, with the focus shifting towards complex, often distributed and networked, systems. Typical concerns that are driving the field stem from the high-dimensionality of such systems, the simultaneous presence of discrete and continuous dynamics (hybrid systems), the interaction between physical systems with humans or software, and the quantification of appropriate notions of information for the purpose of decision-making.</p>
-                    <p>The Internet Research Laboratory (IRL), led by Professor Wanjiun Liao of the Department of Electrical Engineering in the National Taiwan University, is engaged in cutting-edge network protocol design. Research in the IRL focuses on provision of solutions for problems encountered in today's Internet as well as Next Generation Internet with more potential applications. Our research activities cover the whole internet, including Broadband Internet, Wireless Internet and Adhoc Technologies, etc.</p>
+                    <p>「電信研究中心」於81年3月成立，並於106年更名為「物聯網研究中心」（以下簡稱本中心）。本中心整合國立臺灣大學電機資訊學院相關系所，為配合國家經濟發展及未來著眼跨領域研究，以期達成從感測器、通訊網路、應用服務至關鍵性軟硬體平台之深耕研究，並拓展與物聯網應用與系統相關領域專家之合作。 中心成立任務為：</p>
+                    <p>一、整合相關系所在物聯網方面之研究能量與設備，從事跨領域研究交流，拓展前瞻性及實用性物聯網</p>
+                    <p>二、培育物聯網相關領域人才，加速推動物聯網系統應用之研究</p>
                   </div>
                   <div className="mb-4">
-                    <h3>目前研究項目</h3>
+                    <h3>諮詢委員</h3>
                     <p>to bring a better life to the citizens</p>
                     <p>five miuntes later</p>
                   </div>

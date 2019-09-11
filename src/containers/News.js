@@ -3,18 +3,19 @@ import { NavLink } from "react-router-dom"
 import $ from 'jquery'
 import temp from "../data/data.js"
 let  data = temp.posts
-let maxpg = 1
+let maxpg = 1 // maximum news pages (default = first page)
 
 class News extends Component {
    constructor(props) {
       super(props);
       this.state = {
-        page_num : 1,
+        page_num : 1, // current page
       };
     }
 
   componentWillMount(){
     maxpg = parseInt(data.length/5+1)
+    //bottom right back to top buttom css
     $(window).scroll(function() {
       // checks if window is scrolled more than 500px, adds/removes solid class
       if($(window).scrollTop() > 10) { 
@@ -25,7 +26,7 @@ class News extends Component {
     });
 
     $(function(){
-        var len = 135; // 超過50個字以"..."取代
+        var len = 135; // 超過135個字以"..."取代
         $(".JQellipsis").each(function(i){
             if($(this).text().length>len){
                 $(this).attr("title",$(this).text());
@@ -40,12 +41,14 @@ class News extends Component {
     return 'page-item '+((value=== this.state.page_num) ?'active':' ');
   }
 
+  //button bar number btn
   control_click=(i)=>{
     this.setState({
       page_num : i
     })
   }
 
+  //button bar previos page btn
   previouspg=()=>{
     let temp = this.state.page_num
     if(this.state.page_num > 1){
@@ -54,6 +57,7 @@ class News extends Component {
       })
     }
   }
+  // bottom bar next page btn
   nextpg=()=>{
     let temp = this.state.page_num
     if(this.state.page_num < maxpg){
@@ -71,7 +75,7 @@ class News extends Component {
       return(
       <div className="event-container">
         <h5>{item.date}</h5>
-        <h3><NavLink className="newstitle" to={`/news/${id}`}>{item.title||"daw"}</NavLink></h3>
+        <h3><NavLink className="newstitle" to={`/news/${item.id}`}>{item.title||"null"}</NavLink></h3>
         <p className="JQellipsis">{item.text}</p>
       </div>              
       )}

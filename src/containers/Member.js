@@ -38,28 +38,42 @@ class Member extends Component {
             <div className='row'>
               <aside className="col-lg-2 mb-5">
                 <ul className="sidebar">
-                  <li><a href="#1">電波</a></li>
-                  <li><a href="#2">大數據</a></li>
-                  <li><a href="#3">通訊</a></li>
+                  <li><a href="#1">無線電波</a></li>
+                  <li><a href="#2">物聯網通信與系統</a></li>
+                  <li><a href="#3">資安</a></li>
+                  <li><a href="#4">物聯網硬體</a></li>
+                  <li><a href="#5">物聯網應用</a></li>
                 </ul>
               </aside>     
               <div className="col-lg-10">
                 <div id="1" className="mb-4">
-                  <h2 className=" text-justify yahei ">電波</h2>
+                  <h2 className=" text-justify yahei ">無線電波</h2>
                   <div className="row">
-                    {this.create_members_card('phd')}
+                    {this.create_members_card('RV')}
                   </div>
                 </div>
                 <div id="2" className="mb-4">
-                  <h2 className="text-justify yahei">大數據</h2>
+                  <h2 className="text-justify yahei">物聯網通信與系統</h2>
                   <div className="row">
-                    {this.create_members_card('master')}
+                    {this.create_members_card('IoTS')}
                   </div>
                 </div> 
                 <div id="3" className="mb-4">
-                  <h2 className="text-justify yahei">通訊</h2> 
+                  <h2 className="text-justify yahei">資安</h2> 
                   <div className="row">
-                    {this.create_members_card('other')}
+                    {this.create_members_card('IS')}
+                  </div>
+                </div>
+                <div id="4" className="mb-4">
+                  <h2 className="text-justify yahei">物聯網硬體</h2> 
+                  <div className="row">
+                    {this.create_members_card('IoTH')}
+                  </div>
+                </div>
+                <div id="5" className="mb-4">
+                  <h2 className="text-justify yahei">物聯網應用</h2> 
+                  <div className="row">
+                    {this.create_members_card('IoTA')}
                   </div>
                 </div>
               </div>         
