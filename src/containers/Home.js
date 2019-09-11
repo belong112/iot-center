@@ -61,7 +61,7 @@ class Home extends Component {
                 </div>
                 <div className="col-lg">
                   <div className="yahei p-1 text-center title-container">
-                    <h2><i className="far fa-copy"></i> 發布論文</h2>
+                    <h2><i className="far fa-copy"></i> 研究計畫</h2>
                   </div>
                   <div className="p-container">
                     <ul>
