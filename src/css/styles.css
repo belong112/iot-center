@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Bitter:700|Noto+Sans+TC&display=swap');
 html{
 	scroll-behavior: smooth;
-	--main-light-blue: #F2FCFE;
-	--main-dark-blue: #1F93D3;
+	--main-light-blue: #fdffe6aa;
+	--main-dark-blue: #C3D500;
 }
 ul{
 	padding-inline-start:20px;

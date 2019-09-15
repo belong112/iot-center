@@ -1,15 +1,15 @@
 import React from 'react';
 import Main from "./containers/Main"
-import {BrowserRouter} from "react-router-dom"
+import { HashRouter } from "react-router-dom"
 import "./css/styles.css"
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter basename="/iot-center">
       <div className="App">
         <Main />
       </div>
-    </BrowserRouter>  
+    </HashRouter>  
   );
 }
 
