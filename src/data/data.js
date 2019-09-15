@@ -2,6 +2,12 @@ import img1 from "../img/member_picture/morty.jpg"
 import img2 from "../img/member_picture/rick.jpg"
 
 import n_img_1 from "../img/news_image/4.jpg"
+
+// 請先將教授的照片上傳至 img/member_picture 資料夾中
+// 在上方 import 該照片
+// 於下方填入新資料
+// 註: iamge:照片 identity:組別代碼 name:名字 text:專業領域
+// 組別代碼: 無線電波組 RV ; 物聯網通信與系統 IoTS ; 資安 IS ; 物聯網硬體 IoTH ; 物聯網應用 IoTA
 const members = [
 	{
 		image:img1,
@@ -47,11 +53,11 @@ const members = [
 	}		
 ]
 
-//最新消息 date:為日期, title是標題, text是內文
-//複製其中一則消息後照相同格式修改即可
-//請更新在陣列尾端
-//換行請用 \n 
-const posts = [
+// 最新消息 id:編碼 date:日期, title:標題, text:內文, image:照片, imagetxt:照片介紹文字
+// 複製其中一則消息後照相同格式修改即可 
+// 請更新在陣列尾端
+// 換行請用 \n\n  
+const news = [
 	{
 		id:1,
 		date:"2019/2/19",
@@ -89,11 +95,17 @@ const posts = [
 		id:6,
 		date:"2019/8/15",
 		title:"test",
-		text:"texe22"
+		text:"當設計師沒拿到文案開始做設計，所以會使用 Lorem Ipsum 當做假想文案排版，這就好像煮牛肉麵時沒牛肉，先拿豬肉燉的湯當湯底，牛肉就先用豆腐代替，等牛肉煮好就放上去。"
+	},
+	{
+		id:7,
+		data:"2019/9/15",
+		title:'台積電參訪',
+		text:'在不來的人務必說一聲，不然食物可能會浪費了另外這次的攤位有需要領號碼牌的限額卡牌活動，領取時間分別為9:30一次，10:30一次，'
 	}
 ]
 
-const posts_number = posts.map((item,i)=>{
+const news_number = news.map((item,i)=>{
 	return (i+1).toString()
 })
 
@@ -102,7 +114,7 @@ const posts_number = posts.map((item,i)=>{
 //date:為日期, title是標題, text是內文
 //複製其中一則消息後照相同格式修改即可
 //特別注意 text 不可超過40字
-const news = [
+const announcement = [
 	{
 		date:"2019/8/19",
 		title:"水瓶座8月19日星座運勢",
@@ -112,6 +124,7 @@ const news = [
 		date:"2019/8/19",
 		title:"處女座8月19日星座運勢",
 		text:"今天的好運並不常見，灰色的物品能為你帶來好運。今天會有平常想不出來的好點子。"
-	}
+	}	
 ]
-export default {members, posts, news, posts_number};
+
+export default {members, announcement, news, news_number};

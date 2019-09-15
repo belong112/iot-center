@@ -4,7 +4,7 @@ import $ from 'jquery'
 import temp from "../data/data.js"
 import defaultimg from '../img/news_image/4.jpg'
 
-let  data = temp.posts
+let data = temp.news
 let maxpg = 1 // maximum news pages (default = first page)
 
 class News extends Component {
@@ -25,17 +25,6 @@ class News extends Component {
       } else {
           $('.back-to-top').css('opacity','0');
       }
-    });
-
-    $(function(){
-        var len = 135; // 超過135個字以"..."取代
-        $(".JQellipsis").each(function(i){
-            if($(this).text().length>len){
-                $(this).attr("title",$(this).text());
-                var text=$(this).text().substring(0,len-1)+"...";
-                $(this).text(text);
-            }
-        });
     });
   }
 
@@ -71,6 +60,18 @@ class News extends Component {
 
   render() {
 
+    // 固定新聞簡介字數
+    $(function(){
+        var len = 135; // 超過135個字以"..."取代
+        $(".JQellipsis").each(function(i){
+            if($(this).text().length>len){
+                $(this).attr("title",$(this).text());
+                var text=$(this).text().substring(0,len-1)+"...";
+                $(this).text(text);
+            }
+        });
+    });
+
     // 產出所有新聞欄
     const posts = data.filter((item,id) => {
       if((this.state.page_num-1)*5<id+1 && id+1 <= this.state.page_num*5) 
@@ -79,7 +80,7 @@ class News extends Component {
       return(
       <div className="mb-3 pb-2 d-table border-bottom border-secondary">
         <div className="leftpart1">
-          <img src={item.image || defaultimg} />
+          <img src={item.image || defaultimg} alt='news_image' />
         </div>
         <div className="rightpart1">
           <h4>{item.date || "null"}</h4>
@@ -94,9 +95,9 @@ class News extends Component {
     // 確認總頁數
     let lis = []
     for (let i = 1; i <= maxpg; i++) {
-      lis.push(<li className={this.isActive(i)}><button onClick={() => {this.control_click(i)}} className="page-link">{i}</button></li>
-                    )
+      lis.push(<li className={this.isActive(i)}><button onClick={() => {this.control_click(i)}} className="page-link">{i}</button></li> )
     }
+
     return (
       <div className="main-container">          
           <div className='index-container'>

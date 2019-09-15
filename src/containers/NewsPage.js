@@ -31,8 +31,8 @@ class NewsPage extends Component {
               <aside className="col-lg-2 aside">
                 <ul className="sidebar">
                   <li><NavLink to="/news">最新消息</NavLink></li>
+                  <li><NavLink to="/news">活動公告</NavLink></li>
                   <li><NavLink to="/news">行事曆</NavLink></li>
-                  <li><NavLink to="/news">活動快報</NavLink></li>
                 </ul>
               </aside>  
               <div className="col-lg-10 mb-3 text-justify">
@@ -40,7 +40,7 @@ class NewsPage extends Component {
                 <h3>{data[id-1].title}</h3>
                 <p className="JQellipsis">{data[id-1].text}</p>
                 <div className="text-center">
-                  <img src={data[id-1].image} className="img-fluid mx-auto d-block" width="70%"/>
+                  <img src={data[id-1].image} alt="newsiamge" className="img-fluid mx-auto d-block" width="70%"/>
                   <p className="font-italic">{data[id-1].imagetxt}</p>
                 </div>
               </div>                                                           

@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import logo from "../img/up-chevron-button.png"
 import ScrollUpButton from "react-scroll-up-button";
-import $ from 'jquery'
 
 class Footer extends Component {
   render() {
@@ -19,6 +17,7 @@ class Footer extends Component {
           </div>
 
           <ScrollUpButton AnimationDuration={700} />
+          
         </div>
       </footer>
     );

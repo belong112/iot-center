@@ -17,8 +17,7 @@ class Navbar extends Component {
         <div className="main-container">   
             <div className="nav-top-container">
                 <div className="leftpart">
-                    <a href="https://www.ntu.edu.tw/" target="_blank" rel="noopener noreferrer"><img alt="logo" src={require('../img/ntu.png')} /></a>
-                    <NavLink to="/" style={{color: '#1C4D83'}}><h3 style={{paddingLeft:'60px'}}>Internet research center</h3></NavLink>
+                    <NavLink to="/" style={{color: '#1C4D83'}}><img style={{width: '400px'}} alt="logo" src={require('../img/logo-header.png')} /></NavLink>
                 </div>
                 <div className="rightpart">
                    EN | CH  
