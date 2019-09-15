@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/iot-center/static/css/main.d9839ffe.chunk.css",
-    "main.js": "/iot-center/static/js/main.4d898e24.chunk.js",
-    "main.js.map": "/iot-center/static/js/main.4d898e24.chunk.js.map",
+    "main.css": "/iot-center/static/css/main.4c8fd26c.chunk.css",
+    "main.js": "/iot-center/static/js/main.8adef241.chunk.js",
+    "main.js.map": "/iot-center/static/js/main.8adef241.chunk.js.map",
     "runtime~main.js": "/iot-center/static/js/runtime~main.2f683def.js",
     "runtime~main.js.map": "/iot-center/static/js/runtime~main.2f683def.js.map",
-    "static/js/2.003547e3.chunk.js": "/iot-center/static/js/2.003547e3.chunk.js",
-    "static/js/2.003547e3.chunk.js.map": "/iot-center/static/js/2.003547e3.chunk.js.map",
+    "static/js/2.42710ac4.chunk.js": "/iot-center/static/js/2.42710ac4.chunk.js",
+    "static/js/2.42710ac4.chunk.js.map": "/iot-center/static/js/2.42710ac4.chunk.js.map",
     "index.html": "/iot-center/index.html",
-    "precache-manifest.3f2dd8a709b0fecfc7ba2a725b678428.js": "/iot-center/precache-manifest.3f2dd8a709b0fecfc7ba2a725b678428.js",
+    "precache-manifest.aee443d18da9813b00b0efa945b61605.js": "/iot-center/precache-manifest.aee443d18da9813b00b0efa945b61605.js",
     "service-worker.js": "/iot-center/service-worker.js",
-    "static/css/main.d9839ffe.chunk.css.map": "/iot-center/static/css/main.d9839ffe.chunk.css.map",
+    "static/css/main.4c8fd26c.chunk.css.map": "/iot-center/static/css/main.4c8fd26c.chunk.css.map",
     "static/media/4.jpg": "/iot-center/static/media/4.8d530f57.jpg",
-    "static/media/6.jpg": "/iot-center/static/media/6.9910c84c.jpg",
     "static/media/styles.css": "/iot-center/static/media/bg.01ae3024.jpg",
     "static/media/default.png": "/iot-center/static/media/default.cd6d11ef.png",
+    "static/media/logo-header.png": "/iot-center/static/media/logo-header.8ddba14a.png",
     "static/media/morty.jpg": "/iot-center/static/media/morty.c181f79c.jpg",
-    "static/media/ntu.png": "/iot-center/static/media/ntu.e6f14e3f.png",
     "static/media/rick.jpg": "/iot-center/static/media/rick.d768b1a6.jpg"
   }
 }
