@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from "react-router-dom"
 import $ from 'jquery'
 import temp from "../data/data.js"
+import defaultimg from '../img/news_image/4.jpg'
 
 let  data = temp.posts
 let maxpg = 1 // maximum news pages (default = first page)
@@ -76,25 +77,17 @@ class News extends Component {
         return item
     }).map((item,id) => {
       return(
-      <div>
-      <div className="event-container">
-        <h5>{item.date}</h5>
-        <h3><NavLink className="newstitle" to={`/news/${item.id}`}>{item.title||"null"}</NavLink></h3>
-        <p className="JQellipsis">{item.text}</p>
-      </div>
-
       <div className="mb-3 pb-2 d-table border-bottom border-secondary">
         <div className="leftpart1">
-          <img src={item.image} />
+          <img src={item.image || defaultimg} />
         </div>
         <div className="rightpart1">
           <h4>{item.date || "null"}</h4>
-          <h3 className="newstitle"><NavLink to={`/news/${item.id}`}>{item.title || "Null"}</NavLink></h3>
+          <h3 className="newstitle"><NavLink className='newstitle' to={`/news/${item.id}`}>{item.title || "Null"}</NavLink></h3>
           <p className="JQellipsis">{item.text|| "null"}</p>
         </div>
         <div className='clear'></div>
-      </div>  
-      </div>            
+      </div>             
       )}
     );
 

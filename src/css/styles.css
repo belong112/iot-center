@@ -231,7 +231,7 @@ a:hover{
 }
 .leftpart1{
 	display: block;
-	max-width: 25%;
+	max-width: 20%;
 	float: left;
 	height: 100% ;
 	padding-top: 10px;
@@ -244,7 +244,7 @@ a:hover{
 .rightpart1{
 	display: block;
 	padding-left: 20px;
-	width: 75%;
+	width: 80%;
 	float: right;
 }
 
