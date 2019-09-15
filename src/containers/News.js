@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from "react-router-dom"
 import $ from 'jquery'
 import temp from "../data/data.js"
+
 let  data = temp.posts
 let maxpg = 1 // maximum news pages (default = first page)
 
@@ -68,18 +69,36 @@ class News extends Component {
   }
 
   render() {
+
+    // 產出所有新聞欄
     const posts = data.filter((item,id) => {
-      if((this.state.page_num-1)*5<id+1 && id+1 <= this.state.page_num*5)
+      if((this.state.page_num-1)*5<id+1 && id+1 <= this.state.page_num*5) 
         return item
     }).map((item,id) => {
       return(
+      <div>
       <div className="event-container">
         <h5>{item.date}</h5>
         <h3><NavLink className="newstitle" to={`/news/${item.id}`}>{item.title||"null"}</NavLink></h3>
         <p className="JQellipsis">{item.text}</p>
-      </div>              
+      </div>
+
+      <div className="mb-3 pb-2 d-table border-bottom border-secondary">
+        <div className="leftpart1">
+          <img src={item.image} />
+        </div>
+        <div className="rightpart1">
+          <h4>{item.date || "null"}</h4>
+          <h3 className="newstitle"><NavLink to={`/news/${item.id}`}>{item.title || "Null"}</NavLink></h3>
+          <p className="JQellipsis">{item.text|| "null"}</p>
+        </div>
+        <div className='clear'></div>
+      </div>  
+      </div>            
       )}
     );
+
+    // 確認總頁數
     let lis = []
     for (let i = 1; i <= maxpg; i++) {
       lis.push(<li className={this.isActive(i)}><button onClick={() => {this.control_click(i)}} className="page-link">{i}</button></li>

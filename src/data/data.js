@@ -1,5 +1,7 @@
 import img1 from "../img/member_picture/morty.jpg"
 import img2 from "../img/member_picture/rick.jpg"
+
+import n_img_1 from "../img/news_image/4.jpg"
 const members = [
 	{
 		image:img1,
@@ -53,10 +55,11 @@ const posts = [
 	{
 		id:1,
 		date:"2019/2/19",
-		img:img1,
 		title:"物聯網中心參訪趨勢科技",
 		text:"由物聯網中心-廖婉君主任帶領電機工程學系林宗男教授、王凡教授、王勝德教授　謝宏昀教授、黃俊郎教授、余子吉教授、吳沛遠教授等及台灣科技大學鄧惟中教授、沈上翔教授參訪趨勢科技並進行雙邊會議。\n\n"+
-				 "趨勢科技是產業界中資訊安全的領航者，總經理展示公司中的實驗室（X Gen Security Lab），概述公司的背景及資訊安全病毒之研究。雙方相談甚歡，尋求合作機會的可能性。針對學生實習、課程安排等計畫討論，未來不但將會提供學生機構實習，建立產學合作關係，並將邀請業界專業人員，於校內開設實務課程，理論與實務並重，提供學生多元學習平台及學以致用。"
+				 "趨勢科技是產業界中資訊安全的領航者，總經理展示公司中的實驗室（X Gen Security Lab），概述公司的背景及資訊安全病毒之研究。雙方相談甚歡，尋求合作機會的可能性。針對學生實習、課程安排等計畫討論，未來不但將會提供學生機構實習，建立產學合作關係，並將邀請業界專業人員，於校內開設實務課程，理論與實務並重，提供學生多元學習平台及學以致用。",
+		image:n_img_1,
+		imagetxt:"測試用文字",
 	},
 	{
 		id:2,
@@ -93,8 +96,6 @@ const posts = [
 const posts_number = posts.map((item,i)=>{
 	return (i+1).toString()
 })
-
-console.log(posts_number)
 
 
 //顯示於第一頁的新聞 

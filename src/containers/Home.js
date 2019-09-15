@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import $ from 'jquery'
 import temp from "../data/data"
 import Mynews from "../components/Mynews"
-import test from "../img/4.jpg"
-import rick from "../img/6.jpg"
+import test from "../img/news_image/4.jpg"
+import rick from "../img/news_image/6.jpg"
 let data_post = temp.posts
 let data_news = temp.news
 

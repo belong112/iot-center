@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import $ from 'jquery'
 import temp from "../data/data.js"
 import { NavLink } from "react-router-dom"
+
 let data = temp.posts
 let ids = temp.posts_number
 
@@ -22,7 +23,7 @@ class NewsPage extends Component {
         return id && postids.includes(id) ? (
             <div className="main-container">          
           <div className='index-container'>
-            <div className="yahei text-justify">
+            <div className="col-lg-12 yahei text-justify">
               <h1>最新消息</h1>
               <hr/>
             </div>            
@@ -34,10 +35,14 @@ class NewsPage extends Component {
                   <li><NavLink to="/news">活動快報</NavLink></li>
                 </ul>
               </aside>  
-              <div class="col-lg-10 mb-3 text-justify">
+              <div className="col-lg-10 mb-3 text-justify">
                 <h4>{data[id-1].date}</h4>
                 <h3>{data[id-1].title}</h3>
                 <p className="JQellipsis">{data[id-1].text}</p>
+                <div className="text-center">
+                  <img src={data[id-1].image} className="img-fluid mx-auto d-block" width="70%"/>
+                  <p className="font-italic">{data[id-1].imagetxt}</p>
+                </div>
               </div>                                                           
             </div> 
           </div>           

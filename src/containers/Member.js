@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import $ from 'jquery'
+import { HashLink as Link } from 'react-router-hash-link';
+
 import Mycard from "../components/Mycard"
 import temp from "../data/data"
 import defaultimg from "../img/member_picture/default.png"
+
 let data = temp.members
 
 class Member extends Component {
@@ -38,11 +41,11 @@ class Member extends Component {
             <div className='row'>
               <aside className="col-lg-2 mb-5">
                 <ul className="sidebar">
-                  <li><a href="#1">無線電波</a></li>
-                  <li><a href="#2">物聯網通信與系統</a></li>
-                  <li><a href="#3">資安</a></li>
-                  <li><a href="#4">物聯網硬體</a></li>
-                  <li><a href="#5">物聯網應用</a></li>
+                  <li><Link smooth to="/member#1">無線電波</Link></li>
+                  <li><Link smooth to="/member#2">物聯網通信與系統</Link></li>
+                  <li><Link smooth to="/member#3">資安</Link></li>
+                  <li><Link smooth to="/member#4">物聯網硬體</Link></li>
+                  <li><Link smooth to="/member#5">物聯網應用</Link></li>
                 </ul>
               </aside>     
               <div className="col-lg-10">

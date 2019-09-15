@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Bitter:700|Noto+Sans+TC&display=swap');
 html{
-	scroll-behavior: smooth;
 	--main-light-blue: #fdffe6aa;
 	--main-dark-blue: #C3D500;
 }
@@ -27,7 +26,7 @@ a:hover{
 .sidebar li{
 	border-bottom: 1.2px solid;
 	padding: 10px;
-	font-size: 0.95rem;
+	font-size: 0.98rem;
 	color: #C3D500;
 }
 
@@ -198,7 +197,7 @@ a:hover{
 	background-color: #fff;
 	padding: 10px 20px 10px 20px;
 	border-radius: 10px;
-	font-size: 0.95rem;
+	font-size: 0.97rem;
 }
 
 .newstitle{
@@ -213,7 +212,7 @@ a:hover{
 	background-color: azure;
 }
 .pubulication-table td{
-	font-size: 0.9rem;
+	font-size: 1rem;
 }
 
 .cardimg{
@@ -229,6 +228,24 @@ a:hover{
 }
 .phone_select{
 	display: none;
+}
+.leftpart1{
+	display: block;
+	max-width: 25%;
+	float: left;
+	height: 100% ;
+	padding-top: 10px;
+	vertical-align:middle;
+	box-sizing: border-box;
+}
+.leftpart1 img{
+	width: 100%;
+}
+.rightpart1{
+	display: block;
+	padding-left: 20px;
+	width: 75%;
+	float: right;
 }
 
 @media screen and (max-width: 960px) {
