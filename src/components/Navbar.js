@@ -19,7 +19,7 @@ class Navbar extends Component {
                 <div className="leftpart">
                     <NavLink to="/" style={{color: '#1C4D83'}}><img style={{width: '400px'}} alt="logo" src={require('../img/logo-header.png')} /></NavLink>
                 </div>
-                <div className="rightpart">
+                <div className="d-none rightpart">
                    EN | CH  
                 </div>
             </div>     

@@ -9,7 +9,7 @@ class Mycard extends Component {
       <div style={{textAlign:"center"}}>
         <Card >
             <div className="cardimg mt-1">
-              <img src={this.props.image} className="rounded" style={{height:"150px"}} alt="profilepicture"/>
+              <img src={this.props.image} className="rounded" alt="profilepicture"/>
             </div>
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">

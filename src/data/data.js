@@ -1,52 +1,65 @@
-import img1 from "../img/member_picture/morty.jpg"
-import img2 from "../img/member_picture/rick.jpg"
+import t_img_1 from "../img/teacher_image/1.jpg"
+import t_img_2 from "../img/teacher_image/2.jpg"
+import t_img_3 from "../img/teacher_image/3.jpg"
+import t_img_4 from "../img/teacher_image/4.jpg"
+import t_img_5 from "../img/teacher_image/5.jpg"
+import t_img_6 from "../img/teacher_image/6.jpg"
+import t_img_7 from "../img/teacher_image/7.jpg"
+import t_img_8 from "../img/teacher_image/8.jpg"
 
-import n_img_1 from "../img/news_image/4.jpg"
+import n_img_1 from "../img/news_image/news01.jpg"
+import n_img_2 from "../img/news_image/news02.jpg"
 
-// 請先將教授的照片上傳至 img/member_picture 資料夾中
+// 請先將教授的照片上傳至 img/teacher_image 資料夾中
 // 在上方 import 該照片
 // 於下方填入新資料
-// 註: iamge:照片 identity:組別代碼 name:名字 text:專業領域
+// 註: image:照片 identity:組別代碼 name:名字 text:專業領域
 // 組別代碼: 無線電波組 RV ; 物聯網通信與系統 IoTS ; 資安 IS ; 物聯網硬體 IoTH ; 物聯網應用 IoTA
 const members = [
 	{
-		image:img1,
+		image:t_img_1,
 		identity:"RV",
 		name:"王暉",
 		text:'單晶微波積體電路設計、微波元件模型分析'
 	},
 	{
-		image:img2,
+		image:t_img_8,
 		identity:"IoTS",
 		name:'李琳山',
 		text:'數位語音處理'
 	},
 	{
+		image:t_img_2,
 		identity:"IoTS",
 		name:'吳安宇',
 		text:'VLSI/CAD'
 	},
 	{
+		image:t_img_4,
 		identity:"RV",
 		name:'吳瑞北',
 		text:'微波電路、訊號完整度、毫米波系統構裝'
 	},
 	{
+		image:t_img_5,
 		identity:"IoTS",
 		name:'林宗男',
 		text:'深度學習'
 	},
 	{
+		image:t_img_6,
 		identity:"IS",
 		name:'雷欽隆',
 		text:'網路安全'
 	},
 	{
+		image:t_img_7,
 		identity:"IoTA",
 		name:'李百祺',
 		text:'生物醫學工程'
 	},
 	{
+		image:t_img_4,
 		identity:"IoTH",
 		name:'盧信嘉',
 		text:'微波量測'
@@ -71,37 +84,17 @@ const news = [
 		id:2,
 		date:"2018/11/29",
 		title:"AIOT智慧物聯網論壇",
-		text:"隨著無線通訊技術的成熟與人工智慧技術的發展，近年人工智慧(AI)生態系與物聯網(IoT)網結合且不斷擴大，逐漸匯流為AIoT，並帶來多項新趨勢。從智慧交通、智慧監控、智慧零售、智慧醫療與智慧工廠等各種 AIoT 裝置軟硬整合解決方案正在各地開枝散葉，在 AIoT 技術驅動下，也帶領創新創意商務新概念。台灣擁有世界一流的高科技人才，搭載世界級頂尖的硬體製造水準，相繼吸引兩大國際企業微軟及亞馬遜雲端運算在台灣設置AI研發中心及聯合創新中心，掌握這一波科技革新將加速帶動台灣產業在物聯網時代的轉型與創新。"
+		text:"隨著無線通訊技術的成熟與人工智慧技術的發展，近年人工智慧(AI)生態系與物聯網(IoT)網結合且不斷擴大，逐漸匯流為AIoT，並帶來多項新趨勢。從智慧交通、智慧監控、智慧零售、智慧醫療與智慧工廠等各種 AIoT 裝置軟硬整合解決方案正在各地開枝散葉，在 AIoT 技術驅動下，也帶領創新創意商務新概念。台灣擁有世界一流的高科技人才，搭載世界級頂尖的硬體製造水準，相繼吸引兩大國際企業微軟及亞馬遜雲端運算在台灣設置AI研發中心及聯合創新中心，掌握這一波科技革新將加速帶動台灣產業在物聯網時代的轉型與創新。",
+		image:n_img_2,
+		imagetxt:"由左至右為吳沛遠教授、林昌鴻教授、蘇炫榮教授、林宗男教授、貝蘇章老師、貢三元教授、黃正能教授、魏宏宇教授等及其他重要產業界人員共襄盛舉"
 	},
 	{
 		id:3,
-		date:"2019/8/12",
-		title:"馬久久吃法位比奇堡!",
-		text:"球不有言友我、約經專玩開自參食上：還度戲片龍的人代最第頭；己玩類鄉可國學了類什一多說言。數示到發入樣住我用加展成單，北盡臺度技想好，還才樣長出，所這上子那過包阿可的成文不全政，法先獲英策量筆朋能持府聽青據們根；行出信朋國來思前點一月同園。期北自怎。而的度感前起道座母金位教人林步兩我里；的下一防候態，提人後……縣離所要區只濟？來了和天？造子斯商水幾我著提：以育我的是……年夫用感代王照去看長上外道麼說正在同！"
-	},
-	{
-		id:4,
-		date:"2019/8/15",
-		title:"明天就是閉幕式囉",
-		text:"在不來的人務必說一聲，不然食物可能會浪費了另外這次的攤位有需要領號碼牌的限額卡牌活動，領取時間分別為9:30一次，10:30一次，如果太晚來的話會少掉一點機會唷~也有在信件中告訴夥伴們，會有履歷健檢的攤位，因此如果有意願的話可以印出自己的履歷紙本，不過同樣也希望提醒大家，履歷健檢不是這個活動設計的環節，只是剛好有前輩和講師很好心地想提供協助，因此服務的人是有限的，但是這"
-	},
-	{
-		id:5,
-		date:"2019/8/15",
-		title:"親愛的參賽夥伴",
-		text:"她邊課一白也不成我公強得去身做差流家山大然海時傳想？\n\n他動道題校數存設做只飯你美舉了亮無到型有再石無原開印意雙者種。態一大兩樂除活，景北要手學成：知可病準式。校東我言指生小屋他天！政沒友的飛本公，勢德紙從世知什陸沒臉的中地陽已車眼一小下滿感應相。仍是命大。一爸每樣色相以一育人西重、來經專車據……說製力事像王舉臺此大……現但問因會拉；的國告念族西，另委此不家沒那的龍清過過一著灣場"
-	},
-	{
-		id:6,
-		date:"2019/8/15",
-		title:"test",
-		text:"當設計師沒拿到文案開始做設計，所以會使用 Lorem Ipsum 當做假想文案排版，這就好像煮牛肉麵時沒牛肉，先拿豬肉燉的湯當湯底，牛肉就先用豆腐代替，等牛肉煮好就放上去。"
-	},
-	{
-		id:7,
-		data:"2019/9/15",
-		title:'台積電參訪',
-		text:'在不來的人務必說一聲，不然食物可能會浪費了另外這次的攤位有需要領號碼牌的限額卡牌活動，領取時間分別為9:30一次，10:30一次，'
+		date:"2018/8/12",
+		title:"測試!",
+		text:"測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試！",
+		image:n_img_2,
+		imagetxt:'測試測試測試'
 	}
 ]
 

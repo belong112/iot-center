@@ -5,7 +5,7 @@ import "./css/styles.css"
 
 function App() {
   return (
-    <HashRouter basename="/iot-center">
+    <HashRouter>
       <div className="App">
         <Main />
       </div>

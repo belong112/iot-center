@@ -3,8 +3,8 @@ import $ from 'jquery'
 import temp from "../data/data.js"
 import { NavLink } from "react-router-dom"
 
-let data = temp.posts
-let ids = temp.posts_number
+let data = temp.news
+let ids = temp.news_number
 
 class NewsPage extends Component {
     componentDidMount() {
@@ -40,7 +40,7 @@ class NewsPage extends Component {
                 <h3>{data[id-1].title}</h3>
                 <p className="JQellipsis">{data[id-1].text}</p>
                 <div className="text-center">
-                  <img src={data[id-1].image} alt="newsiamge" className="img-fluid mx-auto d-block" width="70%"/>
+                  <img src={data[id-1].image} alt="news image" className="img-fluid mx-auto d-block" width="85%"/>
                   <p className="font-italic">{data[id-1].imagetxt}</p>
                 </div>
               </div>                                                           

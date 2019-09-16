@@ -222,7 +222,7 @@ a:hover{
 	align-items: center;
 }
 .cardimg img{
-	max-height: 150px;
+	max-height: 200px;
 }
 .JQellipsis{
 	white-space: pre-wrap;
