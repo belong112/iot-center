@@ -140,11 +140,11 @@ a:hover{
 .img-rounded{
 	width: 100%;
 }
-.footer-container{
+/*.footer-container{
 	padding: 3% 3% 3% 3%;
 	align-items: center;
 	text-align: left;
-}
+}*/
 .footer{
 	font-size: 0.9rem;
 }

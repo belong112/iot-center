@@ -4,14 +4,14 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 import Mycard from "../components/Mycard"
 import temp from "../data/data"
-import defaultimg from "../img/member_picture/default.png"
+import defaultimg from "../img/teacher_image/default.png"
 
 let data = temp.members
 
 class Member extends Component {
   componentDidMount(){
     $(window).scroll(function() {
-      // checks if window is scrolled more than 500px, adds/removes solid class
+      // checks if window is scrolled more than 10px, adds/removes solid class
       if($(window).scrollTop() > 10) { 
           $('.back-to-top').css('opacity','.5');
       } else {
@@ -21,7 +21,7 @@ class Member extends Component {
   }
 
   create_members_card(id){
-      const cards = data.filter(item => item.identity === id).map(member => (
+      const cards = data.filter(item => (item.identity === id || item.identity2===id)).map(member => (
         <div className="col-lg-4 col-sm-6">
           <Mycard image={member.image || defaultimg} name={member.name || 'N/A'} text={member.text || 'N/A'}/>  
           <br/> 

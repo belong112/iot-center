@@ -4,8 +4,9 @@ import $ from 'jquery'
 import temp from "../data/data.js"
 import defaultimg from '../img/news_image/4.jpg'
 
-let data = temp.news
+let data = temp.news.reverse()
 let maxpg = 1 // maximum news pages (default = first page)
+let total_news = data.length
 
 class News extends Component {
    constructor(props) {
