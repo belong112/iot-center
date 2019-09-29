@@ -28,7 +28,7 @@ class Navbar extends Component {
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample06" aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>   
-                    <span className="navbar-brand" style={{color:'white'}}>Internet Research Center</span>            
+                    <span className="navbar-brand yahei" style={{color:'white'}}>物聯網研究中心</span>            
                     <div className="collapse navbar-collapse navbar-items" id="navbarsExample06">
                         <ul className="navbar-nav mr-auto">
                             <li className="nav-item">

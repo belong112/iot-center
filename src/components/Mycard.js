@@ -7,7 +7,7 @@ class Mycard extends Component {
   render() {
     return (
       <div style={{textAlign:"center"}}>
-        <Card >
+        <Card>
             <div className="cardimg mt-1">
               <img src={this.props.image} className="rounded" alt="profilepicture"/>
             </div>

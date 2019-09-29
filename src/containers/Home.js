@@ -28,7 +28,7 @@ class Home extends Component {
             <div className="nav-bot-container text-left"> 
                 <h3>Internet of Things Research Center</h3> 
                 <a target="_blank" rel="noopener noreferrer" href="https://www.ntu.edu.tw/">
-                  <h5>National Taiwan University</h5>
+                  <h5>Strive for excellent</h5>
                 </a>
             </div>
             <div className='index-container'>
