@@ -31,8 +31,8 @@ class NewsPage extends Component {
               <aside className="col-lg-2 aside">
                 <ul className="sidebar">
                   <li><NavLink to="/news">最新消息</NavLink></li>
-                  <li><NavLink to="/news">活動公告</NavLink></li>
                   <li><NavLink to="/news">行事曆</NavLink></li>
+                  <li><NavLink to="/news">活動快報</NavLink></li>
                 </ul>
               </aside>  
               <div className="col-lg-10 mb-3 text-justify">
